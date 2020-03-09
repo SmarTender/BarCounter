@@ -3,12 +3,16 @@ import './App.css'
 import Card from './Components/Card'
 import DrinkList from './DrinkList'
 
-function drinkMapping(drink, index) {
-    const response = []
-    for (let [index, drink] of Object.entries(DrinkList)) {
-        response.push(<Card key={index} img={drink.image} drinkname={drink.name} />)
-    }
-    return response
+// function drinkMapping() {
+//     const response = []
+//     for (let [index, drink] of Object.entries(DrinkList)) {
+//         response.push(<Card key={index} img={drink.image} drinkname={drink.name} />)
+//     }
+//     return response
+// } -- for of megoldás
+
+function drinkMappingTwo([index, drink]) {
+    return <Card key={index} img={drink.image} drinkname={drink.name} />
 }
 
 function App() {
@@ -20,7 +24,7 @@ function App() {
                     Learn React
                 </a>
 
-                {drinkMapping()}
+                {Object.entries(DrinkList).map(drinkMappingTwo)}
             </header>
         </div>
     )
