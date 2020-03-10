@@ -36,7 +36,7 @@ const drinks = {
         image: 'https://tipsybartender.com/wp-content/uploads/2018/01/GinJuiceThumb.jpg',
     },
     eniko: {
-        name: "Eniko's special (drink responsibly!)",
+        name: "Eniko's special!",
         ingredients: {
             gin: 50,
             vodka: 50,
