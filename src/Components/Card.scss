@@ -1,0 +1,24 @@
+.card {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    align-content: center;
+    background-color: pink;
+
+    max-width: 300px;
+
+    img {
+        max-width: 300px;
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        margin-top: 0px;
+    }
+
+    .drink-image {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+}
