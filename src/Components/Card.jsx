@@ -7,13 +7,12 @@ function Card(props) {
             <div className="top">
                 <div
                     className="drink-image"
-                    style={{ backgroundImage: `url(${props.img})` }}
-                    alt={props.drinkname}
+                    style={{ backgroundImage: `url(${props.drink.image})` }}
+                    alt={props.name}
                 ></div>
             </div>
             <div className="bottom">
-                <h1>{props.drinkname}</h1>
-                <p>{props.drinkdescription}</p>
+                <h1>{props.drink.name}</h1>
             </div>
         </div>
     )
