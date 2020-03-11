@@ -20,7 +20,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        fetch('http://5e6799ee1937020016fedede.mockapi.io/drink-list')
+        fetch('https://5e6799ee1937020016fedede.mockapi.io/drink-list')
             .then(res => res.json())
             .then(data => {
                 this.setState({ drinks: data })
