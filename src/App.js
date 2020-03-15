@@ -1,3 +1,4 @@
+import Grid from '@material-ui/core/Grid'
 import React, { Component } from 'react'
 import './App.css'
 import Card from './Components/Card'
@@ -11,7 +12,7 @@ import Card from './Components/Card'
 // } -- for of megoldás
 
 function drinkMapping([index, drink]) {
-    return <Card key={index} drink={drink} />
+    return <Card key={index} id={index} drink={drink} />
 }
 
 class App extends Component {
@@ -36,8 +37,7 @@ class App extends Component {
                     <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                         Learn React
                     </a>
-
-                    {Object.entries(this.state.drinks).map(drinkMapping)}
+                    <Grid container>{Object.entries(this.state.drinks).map(drinkMapping)}</Grid>
                 </header>
             </div>
         )
