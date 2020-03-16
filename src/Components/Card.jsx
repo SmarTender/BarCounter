@@ -4,7 +4,7 @@ import React from 'react'
 import './Card.scss'
 
 function handleOnClick(drinkIdentifier) {
-    axios.post('http://5e6799ee1937020016fedede.mockapi.io/cocktail', {
+    axios.post('https://5e6799ee1937020016fedede.mockapi.io/cocktail', {
         id: drinkIdentifier,
     })
     console.log(drinkIdentifier)
